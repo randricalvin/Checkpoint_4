@@ -1,9 +1,20 @@
-export default function Home() {
+import React from "react";
+import ButtonLetsTalk from "../components/ButtonLetsTalk";
+import Presentation from "../components/Presentation";
+import HomeAnimation from "../components/HomeAnimation";
+
+function Home() {
   return (
-    <div>
-      <h1 className="flex justify-center items-center h-screen text-red-600 text-5xl font-serif text-primaryOrange">
-        test tailwind
-      </h1>
+    <div className="page-home flex justify-evenly">
+      <div>
+        <Presentation />
+        <ButtonLetsTalk />
+      </div>
+      <div>
+        <HomeAnimation />
+      </div>
     </div>
   );
 }
+
+export default Home;
