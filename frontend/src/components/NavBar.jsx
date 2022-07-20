@@ -70,13 +70,24 @@ function NavBar() {
                       </button>
                     </Link>
                   </li>
+                  <li className="border-b border-gray-400 my-8 uppercase hover:text-[#5C64CF]">
+                    <Link to="/projectsadmin">
+                      <button
+                        type="submit"
+                        className="font-bold text-[#F5F4F2] bg-[#5C64CF] px-2 py-2 rounded-lg "
+                      >
+                        Connexion
+                      </button>
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
           </section>
-          <section className="DESKTOP-MENU navbar flex lg:flex-col lg:justify-center lg:items-center lg:flex-1">
-            <ul className=" DESKTOP-MENU hidden space-x-8 lg:flex">
+          <section className="DESKTOP-MENU navbar flex w-screen lg:flex-col lg:justify-center lg:items-center lg:flex-1">
+            <ul className="flex w-screen justify-around items-center DESKTOP-MENU hidden space-x-8 lg:flex">
               {/* center menu navigation */}
+              <div />
               <li>
                 <Link to="/">
                   <button
@@ -114,6 +125,16 @@ function NavBar() {
                     className="font-bold hover:text-[#5C64CF]"
                   >
                     Contact
+                  </button>
+                </Link>
+              </li>
+              <li className="justify-self-end">
+                <Link to="/projectsadmin">
+                  <button
+                    type="submit"
+                    className="font-bold text-[#F5F4F2] bg-[#5C64CF] px-2 py-2 rounded-lg "
+                  >
+                    Connexion
                   </button>
                 </Link>
               </li>
