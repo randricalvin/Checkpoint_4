@@ -1,12 +1,13 @@
+/* eslint-disable import/no-unresolved */
 import React from "react";
+import ProjectsAdminCards from "@components/ProjectsAdminCards";
 import ProjectsTitle from "../components/ProjectsTitle";
-import ProjectsComponents from "../components/ProjectsComponents";
 
 function Projects() {
   return (
     <div className="page-project">
       <ProjectsTitle />
-      <ProjectsComponents />
+      <ProjectsAdminCards />
     </div>
   );
 }
