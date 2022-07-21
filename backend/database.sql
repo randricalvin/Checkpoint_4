@@ -15,7 +15,14 @@ CREATE TABLE IF NOT EXISTS `team` (
 
 INSERT INTO `team` (`id`, `name`, `quantity`) VALUES
 (1, 'Frontend', 5),
-(2, 'Backend', 8);
+(2, 'Backend', 8),
+(3, 'Design', 3),
+(4, 'Devops', 2),
+(5, 'QA', 1),
+(6, 'UX', 4),
+(7, 'PM', 6),
+(8, 'Fullstack', 2);
+
 
 
 CREATE TABLE IF NOT EXISTS `dev` (
@@ -51,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `project` (
   `description` varchar(255) NOT NULL,
   `site_link` varchar(255) NULL,
   `github_link` varchar(255) NULL,
-  `team_id` int(11) NOT NULL,
+  `team_id` int(11) NULL,
   FOREIGN KEY (team_id) REFERENCES team(id)
 ) ENGINE=InnoDB;
 

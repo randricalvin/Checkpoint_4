@@ -5,6 +5,7 @@ import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import ProjectsAdmin from "./pages/ProjectsAdmin";
 import ProjectsAdminDetail from "./pages/ProjectsAdminDetail";
+import CreateProject from "./pages/CreateProject";
 import Contact from "./pages/Contact";
 import NavBar from "./components/NavBar";
 // import CustomCursor from "./components/CustomCursor";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/projectsadmin" element={<ProjectsAdmin />} />
           <Route path="/projectsadmin/:id" element={<ProjectsAdminDetail />} />
+          <Route path="/createproject" element={<CreateProject />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>

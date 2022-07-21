@@ -5,7 +5,7 @@ import ProjectsTitle from "../components/ProjectsTitle";
 
 function Projects() {
   return (
-    <div className="page-project">
+    <div className="sm:h-screen">
       <ProjectsTitle />
       <ProjectsAdminCards />
     </div>

@@ -7,7 +7,7 @@ import ProjectsAdminCards from "@components/ProjectsAdminCards";
 
 function ProjectsAdmin() {
   return (
-    <div className="h-screen">
+    <div className="sm:h-screen">
       <AddProjectButton />
       <ProjectsAdminCards />
     </div>
