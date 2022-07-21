@@ -1,16 +1,6 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .App {
   text-align: center;
@@ -51,6 +41,360 @@ code {
   }
 }
 
-button {
-  font-size: calc(10px + 2vmin);
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 8rem;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #5c64cf;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: red;
+  height: 10rem;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #5c64cf;
+  font-size: 3rem;
+  width: 50vw;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #f5f4f2;
+  padding-top: 2rem;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* config texte presentation home page */
+.navbar {
+  height: 10vh;
+}
+.text-presentation {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 3rem;
+  width: 25rem;
+}
+
+.p-presentation {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.1rem;
+  width: 30rem;
+}
+
+/* config button contact */
+.button-talk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 9rem;
+  height: 3rem;
+}
+
+.button-talk:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.3s;
+}
+
+.button-send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 9rem;
+  height: 3rem;
+}
+
+.button-send:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.3s;
+}
+
+.button-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 8rem;
+  height: 2.5rem;
+}
+
+.button-project:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.3s;
+}
+
+.picto-talk {
+  transform: rotate(-45deg);
+}
+
+.text-hard-skills {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.5rem;
+  width: 25rem;
+  padding-top: 4rem;
+}
+
+.text-hard-skills h3 {
+  font-size: 1rem;
+}
+
+.fleche-home {
+  display: flex;
+  transform: rotate(-90deg);
+  align-items: flex-start;
+  justify-content: center;
+}
+.fleche-home img {
+  width: 4rem;
+}
+
+.page-home {
+  display: flex;
+  align-items: center;
+  /* background: rgb(240,149,100);
+  background: linear-gradient(90deg, rgba(240,149,100,1) 0%, rgba(92,100,207,1) 95%); */
+  height: 80vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.page-skills {
+  background-color: #f09564;
+  height: 90vh;
+}
+
+.page-project {
+  height: 90vh;
+}
+
+.page-contact {
+  background-color: #f09564;
+  height: 90vh;
+}
+
+.footer {
+  height: 10vh;
+  background: rgb(240, 149, 100);
+  background: linear-gradient(
+    90deg,
+    rgba(240, 149, 100, 1) 0%,
+    rgba(92, 100, 207, 1) 95%
+  );
+}
+
+.text-contact {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.5rem;
+  width: 25rem;
+  padding-top: 4rem;
+}
+
+.page-contact-button button {
+  width: 100%;
+  opacity: 95%;
+}
+
+.page-contact-button button:hover {
+  transform: scale(1.01, 1.01);
+  background-color: #3d49e9;
+}
+
+.social-media img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+/* config media query for mobile */
+@media screen and (max-width: 768px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .card-one {
+    width: 80%;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .card-one-image {
+    transform: none;
+  }
+
+  .card-one-button {
+    width: 7rem;
+  }
+
+  .card-one-button:hover {
+    transform: none;
+  }
+
+  /* second card */
+
+  .card-two {
+    width: 80%;
+    margin-bottom: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .card-two-image {
+    transform: none;
+  }
+
+  .card-two-button {
+    width: 7rem;
+  }
+
+  .card-two-button:hover {
+    transform: none;
+  }
+
+  /* Third card */
+
+  .card-three {
+    width: 80%;
+    margin-bottom: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .card-three-image {
+    transform: none;
+  }
+
+  .card-three-button {
+    width: 7rem;
+  }
+
+  .card-three-button:hover {
+    transform: none;
+  }
+
+  /* config contact form mobile */
+
+  .input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .input-form input {
+    width: 80%;
+  }
+
+  .input-form textarea {
+    width: 80%;
+    margin-bottom: 0;
+  }
+
+  .input-form input:nth-child(1) {
+    margin-bottom: 1.25rem;
+    margin-right: 0;
+  }
+
+  .name-input {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .page-contact-button {
+    width: 100vw;
+    background-color: #f09564;
+  }
+
+  .input-form button {
+    margin-bottom: 4rem;
+    margin-top: 1.25rem;
+    width: 80%;
+    background-color: #3d49e9;
+  }
+
+  .input-form button:hover {
+    transform: none;
+  }
+
+  .page-contact-form-map {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-contact-title {
+    margin-bottom: 2rem;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .text-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .Mapping {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f09564;
+  }
+
+  .Mapping Iframe {
+    width: 80%;
+    height: 20rem;
+  }
+
+  .social-media h1 {
+    display: none;
+  }
+
+  .social-media img:hover {
+    transform: none;
+  }
 }
