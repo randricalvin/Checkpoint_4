@@ -6,7 +6,6 @@ import ProjectsAdminOne from "./ProjectsAdminOne";
 function ProjectsAdminCards() {
   const [projects, setProjects] = useState([]);
 
-  // faire un useEffect pour récupérer les projets
   useEffect(() => {
     axios
       .get(`${import.meta.env.VITE_BACKEND_URL}/projectsadmin`)
