@@ -6,7 +6,7 @@ import linktree from "../assets/contact/linktree.svg";
 function SocialMedia() {
   return (
     <div className="social-media flex justify-center items-center">
-      <h1 className="text-xl font-bold text-[#F5F4F2]">Check out my</h1>
+      <h1 className="text-xl font-bold text-[#F5F4F2]">Check out our</h1>
       <div>
         <a href="https://www.linkedin.com/in/calvin-randrianantenaina-26986a118/">
           <img

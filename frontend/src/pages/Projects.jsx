@@ -1,12 +1,17 @@
+/* eslint-disable import/no-unresolved */
 import React from "react";
+import ProjectsAdminCards from "@components/ProjectsAdminCards";
 import ProjectsTitle from "../components/ProjectsTitle";
-import ProjectsComponents from "../components/ProjectsComponents";
 
 function Projects() {
   return (
-    <div className="page-project">
+    <div className="sm:h-screen">
       <ProjectsTitle />
-      <ProjectsComponents />
+      <div className="project-card">
+        <div className="flex flex-row">
+          <ProjectsAdminCards />
+        </div>
+      </div>
     </div>
   );
 }

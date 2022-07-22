@@ -6,3 +6,6 @@ Lien de la maquette Figma https://www.figma.com/file/vTum3nE64HDdjysZ2fY1Ay/Maqu
 
 ## Modélisation de la BDD
 Lien du schéma de la BDD https://drawsql.app/wcs-4/diagrams/checkpoint-4
+
+## Userstories Trello 
+Voici le lien des userstories sur Trello https://trello.com/invite/b/qqAIiWhG/0bd7355450d6e4d138eb1acc5fc452ca/checkpoint4

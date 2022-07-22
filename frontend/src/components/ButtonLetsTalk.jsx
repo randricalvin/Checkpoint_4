@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function ButtonLetsTalk() {
   return (
-    <div>
+    <div className="flex justify-center lg:justify-start">
       <Link to="/contact">
         <button
           type="submit"
