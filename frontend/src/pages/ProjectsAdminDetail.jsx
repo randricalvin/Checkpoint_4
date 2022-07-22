@@ -47,37 +47,51 @@ function ProjectsAdminDetail() {
         {projectDetail.name}
       </h1>
       <form>
-        <textarea
-          label="Description"
-          name="description"
-          cols="10"
-          rows="5"
-          value={projectDetail.description}
-          onChange={changeInfos}
-          className="w-screen"
+        <label className="flex flex-col items-center text-xl font-bold mt-5">
+          Description
+          <textarea
+            name="description"
+            cols="10"
+            rows="5"
+            value={projectDetail.description}
+            onChange={changeInfos}
+            className="flex  w-80 m-auto mt-2 rounded-lg border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium outline-none focus:border-[#5C64CF] focus:shadow-lg"
+          >
+            {projectDetail.description}
+          </textarea>
+        </label>
+        <label
+          htmlFor="github"
+          className="flex flex-col items-center text-xl font-bold mt-5"
         >
-          {projectDetail.description}
-        </textarea>
-        <textarea
-          label="Lien Github"
-          type="text"
-          name="github_link"
-          value={projectDetail.github_link}
-          onChange={changeInfos}
-          className="w-screen"
-        />
-        <textarea
-          label="Lien du site"
-          type="text"
-          name="site_link"
-          value={projectDetail.site_link}
-          onChange={changeInfos}
-          className="w-screen"
-        />
+          Lien Github
+          <textarea
+            label="Lien Github"
+            type="text"
+            name="github_link"
+            value={projectDetail.github_link}
+            onChange={changeInfos}
+            className="flex m-auto w-80 mt-2 rounded-lg border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium outline-none focus:border-[#5C64CF] focus:shadow-lg"
+          />
+        </label>
+        <label
+          htmlFor="site"
+          className="flex flex-col items-center text-xl font-bold mt-5"
+        >
+          Lien du site
+          <textarea
+            label="Lien du site"
+            type="text"
+            name="site_link"
+            value={projectDetail.site_link}
+            onChange={changeInfos}
+            className="flex m-auto w-80 mt-2 rounded-lg border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium outline-none focus:border-[#5C64CF] focus:shadow-lg"
+          />
+        </label>
       </form>
       <button
         type="button"
-        className="bg-[#F5F4F2] py-1 px-6 mt-5 rounded-lg text-[#5C64CF] font-bold text-xl"
+        className="flex m-auto justify-center text-xl font-bold mt-10 bg-[#5C64CF] text-[#F5F4F2] w-40 text-darkBlue p-3 rounded-lg transition duration-120 ease-out hover:bg-middleBlue active:bg-lightGreen opacity-80"
         onClick={() => updateProject(id)}
       >
         Sauvegarder

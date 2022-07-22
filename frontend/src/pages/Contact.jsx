@@ -2,7 +2,6 @@ import React from "react";
 import ContactTitle from "../components/ContactTitle";
 import ContactForm from "../components/ContactForm";
 import Mapping from "../components/Mapping";
-import Footer from "../components/Footer";
 
 function Contact() {
   return (
@@ -14,7 +13,6 @@ function Contact() {
         <ContactForm />
         <Mapping />
       </div>
-      <Footer />
     </div>
   );
 }

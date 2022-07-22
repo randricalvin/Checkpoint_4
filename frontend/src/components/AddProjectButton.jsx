@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
-import addproject from "../assets/projects/addproject.svg";
+import addproject from "../assets/addproject.svg";
 
 function AddProjectButton({ action }) {
   return (
