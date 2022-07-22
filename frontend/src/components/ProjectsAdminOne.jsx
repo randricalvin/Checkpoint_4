@@ -22,7 +22,7 @@ function ProjectsAdminOne({ name, description, id }) {
       });
   };
   return (
-    <div className="lg:flex flex-row">
+    <div>
       <div className="lg:flex flex-col lg:w-1/4 sm:flex p-6 m-3 bg-[#5C64CF] rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
         <h1 className="flex justify-center text-[#F5F4F2] text-2xl font-bold">
           {name}

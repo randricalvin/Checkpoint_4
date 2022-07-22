@@ -8,7 +8,7 @@ function Projects() {
     <div className="sm:h-screen">
       <ProjectsTitle />
       <div className="project-card">
-        <div>
+        <div className="flex flex-row">
           <ProjectsAdminCards />
         </div>
       </div>
