@@ -8,8 +8,6 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function ProjectsAdminOne({ name, description, id }) {
-  // faire un useEffect pour supprimer un projet
-
   const deleteProject = (id) => {
     axios
       .delete(`${import.meta.env.VITE_BACKEND_URL}/projectsadmin/${id}`)
