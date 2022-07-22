@@ -7,7 +7,11 @@ function Projects() {
   return (
     <div className="sm:h-screen">
       <ProjectsTitle />
-      <ProjectsAdminCards />
+      <div className="project-card">
+        <div className="flex flex-row">
+          <ProjectsAdminCards />
+        </div>
+      </div>
     </div>
   );
 }

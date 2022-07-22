@@ -5,7 +5,7 @@ import HomeAnimation from "../components/HomeAnimation";
 
 function Home() {
   return (
-    <div className="page-home flex justify-evenly">
+    <div className="page-home flex justify-between">
       <div>
         <Presentation />
         <ButtonLetsTalk />

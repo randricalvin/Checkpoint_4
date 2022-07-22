@@ -9,7 +9,7 @@ function Presentation() {
           Welcome to <span className="text-[#5C64CF]">devAgency</span>
         </h1>
       </div>
-      <div className="p-presentation mt-5">
+      <div className="p-presentation mt-5 text-presentation2">
         <p>
           Contrary to popular belief, Lorem Ipsum is not simply random text. It
           has roots in a piece of classical Latin literature from 45 BC, making
